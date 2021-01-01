@@ -72,7 +72,7 @@ function draw() {
   //trex.debug = true;
   background("lightyellow");
   text("Score: "+ score, 500,50);
-  
+   showMobileControls(true, true, true, true);
   if (gameState===PLAY){
     score = score + Math.round(getFrameRate()/60);
     ground.velocityX = -(6 + 3*score/100);
